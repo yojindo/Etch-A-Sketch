@@ -11,16 +11,16 @@ const createTable = (gridSize) => {
   for(let i = 0; i < gridSize; i++) {
     for(let j = 0; j < gridSize; j++) {
       let cell = document.createElement('div');
-				cell.classList.add('cell');
-				cell.addEventListener('mouseover', () => {
-					if(!toggle) {
-						cell.style.backgroundColor = 'black';
-					} else {
-						cell.style.backgroundColor = randomColor();
-						}
-					})
-					containerDiv.appendChild(cell);	
-				}		
+		cell.classList.add('cell');
+		cell.addEventListener('mouseover', () => {
+		if(!toggle) {
+			cell.style.backgroundColor = 'black';
+		} else {
+			cell.style.backgroundColor = randomColor();
+				}
+			})
+		containerDiv.appendChild(cell);	
+		}		
     }
 }
 
